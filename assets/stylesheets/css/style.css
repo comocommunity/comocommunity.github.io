@@ -1,0 +1,97 @@
+:root {
+  --primary-color :#ffffff;
+  --secondary-color: #123e6b;
+  --secondary-hover: #17508a;
+  --text-primary: #000000;
+  --text-header: #ffffff;
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  color: var(--text-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource span {
+  display: flex;
+}
+
+.resource span p {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.resource span img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+.key-contacts {
+  display: table;
+  width: 100%;
+  text-align: -webkit-center;
+}
+
+.contact-card {
+  display: table-cell;
+  text-align: center;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  background-color: var(--secondary-hover);
+  color: var(--primary-color);
+}
+
+.bg-custom-secondary {
+  background-color: var(--secondary-color);
+}
+
+.link-override {
+  color: var(--primary-color)!important;
+}
+
+.legend {
+  height: 5px;
+  width: 20px;
+}
+
+#scrollBtn {
+  height: 75px;
+  width: 75px;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+#scrollBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
