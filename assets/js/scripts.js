@@ -11,6 +11,7 @@ function createChart(sugMax) {
                 borderColor: 'rgba(150, 150, 150, 0.5)',
                 backgroundColor: 'rgba(150, 150, 150, 0.5)',
                 data: [],
+                borderDash: [5, 5],
                 fill: false,
                 lineTension: 0,
             },
@@ -150,7 +151,23 @@ for (let i=0; i<9; i++) {
                         <h4 class="text-center">${Object.getOwnPropertyNames(globalData[0])[i]}</h4>
                         <div class="row text-center my-2">
                         <div class="col col-4 d-flex justify-content-center align-items-center">
-                            <svg class="legend"><g fill="#969696" fill-opacity="0.5"><rect width="100%" height="100%"></rect></g></svg>
+                        <svg class="legend">
+                        <defs>
+                          <linearGradient id="solids" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                            <stop offset="20%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                            <stop offset="20%" style="stop-color:rgb(150, 150, 150);stop-opacity:0" />
+                            <stop offset="40%" style="stop-color:rgb(150, 150, 150);stop-opacity:0" />
+                            <stop offset="40%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                            <stop offset="60%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                            <stop offset="60%" style="stop-color:rgb(150, 150, 150);stop-opacity:0" />
+                            <stop offset="80%" style="stop-color:rgb(150, 150, 150);stop-opacity:0" />
+                            <stop offset="80%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:rgb(150, 150, 150);stop-opacity:0.5" />
+                          </linearGradient>
+                        </defs>
+                        <rect width="20px" height="5px" fill="url(#solids)" />
+                      </svg>
                             <p class="mb-0 mx-2">2019</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
