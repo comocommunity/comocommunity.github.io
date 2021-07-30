@@ -120,15 +120,15 @@ const globalData = [
         'Drug Offences': [4, 4, 7, 2, 7, 8, 3, 16, 7, 5, 0, 7]
     },
     {   // 2021
-        'Burglary (Dwelling)': [16, 13, 7],
-        'Burglary (Non-Dwelling)': [5, 2, 0],
-        'Theft': [42, 44, 32],
-        'Property Damage': [13, 10, 6],
-        'Stealing of Vehicles': [1, 2, 1],
-        'Robbery': [1, 0, 1],
-        'Threatening Behaviour (Non-Family)': [1, 1, 0],
-        'Assault (Non-Family)': [5, 4, 5],
-        'Drug Offences': [1, 10, 3]
+        'Burglary (Dwelling)': [16, 13, 7, 13, 9, 19],
+        'Burglary (Non-Dwelling)': [5, 2, 0, 2, 0, 0],
+        'Theft': [42, 44, 32, 44, 34, 27],
+        'Property Damage': [13, 10, 6, 9, 9, 4],
+        'Stealing of Vehicles': [1, 2, 1, 5, 2, 4],
+        'Robbery': [1, 0, 1, 0, 0, 1],
+        'Threatening Behaviour (Non-Family)': [1, 1, 0, 0, 0, 2],
+        'Assault (Non-Family)': [5, 4, 5, 2, 7, 6],
+        'Drug Offences': [1, 10, 3, 11, 4, 1]
     }
 ]
 
