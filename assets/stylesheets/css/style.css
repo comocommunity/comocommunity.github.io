@@ -40,7 +40,7 @@ header {
   margin-left: 5px;
 }
 
-.resource span img {
+.resource img {
   height: 70px;
   width: 70px;
   object-fit: contain;
