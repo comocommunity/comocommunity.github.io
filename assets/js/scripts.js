@@ -97,17 +97,6 @@ function createChart(sugMax) {
 }
 
 const globalData = [
-    {   // 2019
-        'Burglary (Dwelling)': [14, 16, 12, 4, 13, 13, 18, 20, 24, 20, 24, 14],
-        'Burglary (Non-Dwelling)': [ 0,  0, 1, 3, 3, 3, 1, 1, 3, 4, 1, 2],
-        'Theft': [21, 30, 16, 33, 36, 21, 39, 44, 33, 38, 41, 27],
-        'Property Damage': [6, 5, 8, 5, 9, 7, 8, 13, 9, 10, 16, 14],
-        'Stealing of Vehicles': [3, 4, 2, 2, 2, 3, 5, 6, 6, 8, 3, 7],
-        'Robbery': [1, 1,  0,  0,  0,  0,  0, 2, 1, 1,  0,  0],
-        'Threatening Behaviour (Non-Family)': [ 0, 1,  0,  0,  0,  0, 1, 2,  0,  0, 2, 2],
-        'Assault (Non-Family)': [1, 2, 1, 1, 1, 1, 3, 4, 3, 3, 4, 9],
-        'Drug Offences': [2, 2, 6,  0, 2, 10, 4, 2, 8, 1, 3, 4]
-    },
     {   // 2020
         'Burglary (Dwelling)': [13, 12, 15, 11, 6, 8, 9, 9, 18, 14, 14, 11],
         'Burglary (Non-Dwelling)': [1, 0, 2, 1, 1, 0, 1, 1, 1, 1, 1, 0],
@@ -129,6 +118,17 @@ const globalData = [
         'Threatening Behaviour (Non-Family)': [1, 1, 0, 0, 0, 2, 1, 2, 1, 1, 0, 0],
         'Assault (Non-Family)': [5, 4, 5, 2, 7, 6, 3, 9, 4, 2, 4, 2],
         'Drug Offences': [1, 10, 3, 11, 4, 1, 4, 7, 1, 2, 15, 1]
+    },
+       {   // 2022
+        'Burglary (Dwelling)': [6, 8, 9],
+        'Burglary (Non-Dwelling)': [1, 0, 0],
+        'Theft': [41, 31, 32],
+        'Property Damage': [7, 8, 8],
+        'Stealing of Vehicles': [2, 1, 4],
+        'Robbery': [0, 0, 0],
+        'Threatening Behaviour (Non-Family)': [1, 1, 0],
+        'Assault (Non-Family)': [6, 6, 4],
+        'Drug Offences': [2, 2, 19]
     }
 ]
 
@@ -168,15 +168,15 @@ for (let i=0; i<9; i++) {
                         </defs>
                         <rect width="20px" height="5px" fill="url(#solids)" />
                       </svg>
-                            <p class="mb-0 mx-2">2019</p>
-                        </div>
-                        <div class="col col-4 d-flex justify-content-center align-items-center">
-                            <svg class="legend"><g fill="#606060" fill-opacity="0.5"><rect width="100%" height="100%"></rect></g></svg>
                             <p class="mb-0 mx-2">2020</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
-                            <svg class="legend"><g fill="#123e6b" fill-opacity="0.75"><rect width="100%" height="100%"></rect></g></svg>
+                            <svg class="legend"><g fill="#606060" fill-opacity="0.5"><rect width="100%" height="100%"></rect></g></svg>
                             <p class="mb-0 mx-2">2021</p>
+                        </div>
+                        <div class="col col-4 d-flex justify-content-center align-items-center">
+                            <svg class="legend"><g fill="#123e6b" fill-opacity="0.75"><rect width="100%" height="100%"></rect></g></svg>
+                            <p class="mb-0 mx-2">2022</p>
                         </div>
                     </div>
                         <canvas id="chart${i+1}">
