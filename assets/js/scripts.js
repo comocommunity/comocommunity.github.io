@@ -97,17 +97,6 @@ function createChart(sugMax) {
 }
 
 const globalData = [
-    {   // 2020
-        'Burglary (Dwelling)': [13, 12, 15, 11, 6, 8, 9, 9, 18, 14, 14, 11],
-        'Burglary (Non-Dwelling)': [1, 0, 2, 1, 1, 0, 1, 1, 1, 1, 1, 0],
-        'Theft': [41, 36, 39, 37, 27, 13, 12, 20, 47, 18, 38, 34],
-        'Property Damage': [13, 10, 14, 7, 8, 5, 8, 6, 6, 1, 4, 8],
-        'Stealing of Vehicles': [4, 3, 4, 2, 2, 3, 0, 2, 1, 2, 1, 2],
-        'Robbery': [1, 0, 3, 0, 0, 0, 0, 0, 2, 1, 0, 2],
-        'Threatening Behaviour (Non-Family)': [1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0],
-        'Assault (Non-Family)': [2, 1, 2, 1, 2, 6, 4, 1, 1, 3, 2, 0],
-        'Drug Offences': [4, 4, 7, 2, 7, 8, 3, 16, 7, 5, 0, 7]
-    },
     {   // 2021
         'Burglary (Dwelling)': [16, 13, 7, 13, 9, 19, 15, 10, 12, 4, 11, 11],
         'Burglary (Non-Dwelling)': [5, 2, 0, 2, 0, 0, 5, 3, 1, 4, 1, 1],
@@ -128,7 +117,18 @@ const globalData = [
         'Robbery': [0, 0, 0, 0, 3, 0, 1, 0, 0, 2, 0, 0],
         'Threatening Behaviour (Non-Family)': [1, 1, 1, 2, 0, 2, 0, 1, 2, 0, 2, 0],
         'Assault (Non-Family)': [6, 6, 4, 2, 3, 3, 2, 5, 4, 2, 3, 7],
-        'Drug Offences': [2, 2, 19, 23, 2, 8, 4, 3, 3, 6, 14, 2]
+        'Drug Offences': [2, 2, 19, 23, 2, 8, 4, 3, 3, 6, 15, 2]
+    },
+       {   // 2023
+        'Burglary (Dwelling)': [13, 11, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Burglary (Non-Dwelling)': [1, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Theft': [59, 42, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Property Damage': [8, 17, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Stealing of Vehicles': [4, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Robbery': [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Threatening Behaviour (Non-Family)': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Assault (Non-Family)': [9, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        'Drug Offences': [15, 8, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     }
 ]
 
