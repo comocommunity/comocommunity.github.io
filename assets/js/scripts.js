@@ -168,15 +168,15 @@ for (let i=0; i<9; i++) {
                         </defs>
                         <rect width="20px" height="5px" fill="url(#solids)" />
                       </svg>
-                            <p class="mb-0 mx-2">2020</p>
+                            <p class="mb-0 mx-2">${new Date().getFullYear()-2}</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
                             <svg class="legend"><g fill="#606060" fill-opacity="0.5"><rect width="100%" height="100%"></rect></g></svg>
-                            <p class="mb-0 mx-2">2021</p>
+                            <p class="mb-0 mx-2">${new Date().getFullYear()-1}</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
                             <svg class="legend"><g fill="#123e6b" fill-opacity="0.75"><rect width="100%" height="100%"></rect></g></svg>
-                            <p class="mb-0 mx-2">2022</p>
+                            <p class="mb-0 mx-2">${new Date().getFullYear()}</p>
                         </div>
                     </div>
                         <canvas id="chart${i+1}">
