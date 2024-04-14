@@ -1,3 +1,4 @@
+const years = [2021, 2022, 2023];
 function createChart(sugMax) {
     var labels = [];
     var config = {
@@ -7,7 +8,7 @@ function createChart(sugMax) {
             
             labels: labels,
             datasets: [{
-                label: (new Date().getFullYear()-2),
+                label: years[0],
                 borderColor: 'rgba(150, 150, 150, 0.5)',
                 backgroundColor: 'rgba(150, 150, 150, 0.5)',
                 data: [],
@@ -16,7 +17,7 @@ function createChart(sugMax) {
                 lineTension: 0,
             },
             {
-                label: (new Date().getFullYear()-1),
+                label: years[1],
                 borderColor: 'rgba(60, 60, 60, 0.5)',
                 backgroundColor: 'rgba(60, 60, 60, 0.5)',
                 data: [],
@@ -24,7 +25,7 @@ function createChart(sugMax) {
                 lineTension: 0,
             },
             {
-                label: new Date().getFullYear(),
+                label: years[2],
                 borderColor: 'rgba(18, 62, 107, 0.75)',
                 backgroundColor: 'rgba(18, 62, 107, 0.75)',
                 data: [],
@@ -120,15 +121,15 @@ const globalData = [
         'Drug Offences': [2, 2, 19, 23, 2, 8, 4, 3, 3, 6, 15, 2]
     },
        {   // 2023
-        'Burglary (Dwelling)': [13, 11, 8, 5, 10, 6, 7, 4, 8],
-        'Burglary (Non-Dwelling)': [1, 4, 3, 2, 0, 1, 0, 0, 0],
-        'Theft': [59, 42, 54, 60, 76, 36, 47, 50, 59],
-        'Property Damage': [8, 17, 16, 10, 20, 1, 10, 13, 12],
-        'Stealing of Vehicles': [4, 6, 5, 4, 6, 7, 7, 3, 8],
-        'Robbery': [0, 1, 1, 1, 0, 0, 0, 1, 0],
-        'Threatening Behaviour (Non-Family)': [0, 1, 1, 0, 0, 0, 0, 1, 0],
-        'Assault (Non-Family)': [9, 2, 0, 1, 4, 6, 7, 6, 2],
-        'Drug Offences': [15, 8, 10, 3, 3, 22, 18, 6, 10]
+        'Burglary (Dwelling)': [13, 11, 8, 5, 10, 6, 7, 4, 8, 5, 4, 4],
+        'Burglary (Non-Dwelling)': [1, 4, 3, 2, 0, 1, 0, 0, 0, 1, 0, 0],
+        'Theft': [60, 42, 54, 60, 76, 36, 47, 50, 59, 51, 53, 58],
+        'Property Damage': [8, 17, 16, 10, 20, 1, 10, 13, 12, 12, 21, 14],
+        'Stealing of Vehicles': [4, 6, 5, 4, 6, 7, 7, 3, 8, 0, 4, 3],
+        'Robbery': [0, 1, 1, 1, 0, 0, 0, 1, 0, 3, 1, 0],
+        'Threatening Behaviour (Non-Family)': [0, 1, 1, 0, 0, 0, 0, 1, 0, 3, 2, 2],
+        'Assault (Non-Family)': [9, 2, 0, 1, 4, 6, 7, 6, 2, 6, 4, 6],
+        'Drug Offences': [15, 8, 10, 3, 3, 22, 18, 6, 10, 7, 6, 7]
     }
 ]
 
@@ -168,15 +169,15 @@ for (let i=0; i<9; i++) {
                         </defs>
                         <rect width="20px" height="5px" fill="url(#solids)" />
                       </svg>
-                            <p class="mb-0 mx-2">${new Date().getFullYear()-2}</p>
+                            <p class="mb-0 mx-2">${years[0]}</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
                             <svg class="legend"><g fill="#606060" fill-opacity="0.5"><rect width="100%" height="100%"></rect></g></svg>
-                            <p class="mb-0 mx-2">${new Date().getFullYear()-1}</p>
+                            <p class="mb-0 mx-2">${years[1]}</p>
                         </div>
                         <div class="col col-4 d-flex justify-content-center align-items-center">
                             <svg class="legend"><g fill="#123e6b" fill-opacity="0.75"><rect width="100%" height="100%"></rect></g></svg>
-                            <p class="mb-0 mx-2">${new Date().getFullYear()}</p>
+                            <p class="mb-0 mx-2">${years[2]}</p>
                         </div>
                     </div>
                         <canvas id="chart${i+1}">
