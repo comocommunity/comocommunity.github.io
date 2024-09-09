@@ -1,4 +1,4 @@
-const years = [2021, 2022, 2023];
+const years = [2022, 2023, 2024];
 function createChart(sugMax) {
     var labels = [];
     var config = {
@@ -98,18 +98,7 @@ function createChart(sugMax) {
 }
 
 const globalData = [
-    {   // 2021
-        'Burglary (Dwelling)': [16, 13, 7, 13, 9, 19, 15, 10, 12, 4, 11, 11],
-        'Burglary (Non-Dwelling)': [5, 2, 0, 2, 0, 0, 5, 3, 1, 4, 1, 1],
-        'Theft': [43, 44, 31, 44, 34, 27, 41, 28, 43, 54, 30, 27],
-        'Property Damage': [13, 10, 6, 9, 9, 4, 13, 13, 8, 16, 7, 10],
-        'Stealing of Vehicles': [1, 2, 1, 5, 2, 4, 2, 3, 2, 3, 4, 1],
-        'Robbery': [1, 0, 1, 0, 0, 1, 0, 0, 0, 2, 1, 1],
-        'Threatening Behaviour (Non-Family)': [1, 1, 0, 0, 0, 2, 1, 2, 1, 1, 0, 0],
-        'Assault (Non-Family)': [5, 4, 5, 2, 7, 6, 3, 9, 4, 2, 4, 2],
-        'Drug Offences': [1, 10, 3, 11, 4, 1, 4, 7, 1, 2, 15, 1]
-    },
-       {   // 2022
+    {   // 2022
         'Burglary (Dwelling)': [6, 8, 9, 13, 14, 12, 11, 4, 6, 7, 15, 14],
         'Burglary (Non-Dwelling)': [1, 0, 0, 4, 4, 2, 8, 1, 1, 0, 4, 1],
         'Theft': [41, 31, 30, 39, 32, 40, 40, 27, 47, 59, 43, 38],
@@ -120,7 +109,7 @@ const globalData = [
         'Assault (Non-Family)': [6, 6, 4, 2, 3, 3, 2, 5, 4, 2, 3, 7],
         'Drug Offences': [2, 2, 19, 23, 2, 8, 4, 3, 3, 6, 15, 2]
     },
-       {   // 2023
+    {   // 2023
         'Burglary (Dwelling)': [13, 11, 8, 5, 10, 6, 7, 4, 8, 5, 4, 4],
         'Burglary (Non-Dwelling)': [1, 4, 3, 2, 0, 1, 0, 0, 0, 1, 0, 0],
         'Theft': [60, 42, 54, 60, 76, 36, 47, 50, 59, 51, 53, 58],
@@ -130,6 +119,17 @@ const globalData = [
         'Threatening Behaviour (Non-Family)': [0, 1, 1, 0, 0, 0, 0, 1, 0, 3, 2, 2],
         'Assault (Non-Family)': [9, 2, 0, 1, 4, 6, 7, 6, 2, 6, 4, 6],
         'Drug Offences': [15, 8, 10, 3, 3, 22, 18, 6, 10, 7, 6, 7]
+    },
+    {   // 2024
+        'Burglary (Dwelling)': [6, 4, 6, 6, 2, 2],
+        'Burglary (Non-Dwelling)': [1, 1, 0, 1, 1, 1],
+        'Theft': [53, 52, 56, 38, 27, 39],
+        'Property Damage': [12, 10, 12, 8, 12, 11],
+        'Stealing of Vehicles': [4, 1, 6, 0, 1, 2],
+        'Robbery': [1, 1, 4, 0, 0, 2],
+        'Threatening Behaviour (Non-Family)': [0, 0, 4, 0, 2, 2],
+        'Assault (Non-Family)': [5, 6, 3, 0, 4, 4],
+        'Drug Offences': [1, 3, 8, 5, 3, 0]
     }
 ]
 
