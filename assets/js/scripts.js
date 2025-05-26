@@ -1,4 +1,4 @@
-const years = [2022, 2023, 2024];
+const years = [2023, 2024, 2025];
 function createChart(sugMax) {
     var labels = [];
     var config = {
@@ -98,51 +98,51 @@ function createChart(sugMax) {
 }
 
 const globalData = [
-    {   // 2022
-        'Burglary (Dwelling)': [6, 8, 9, 13, 14, 12, 11, 4, 6, 7, 15, 14],
-        'Burglary (Non-Dwelling)': [1, 0, 0, 4, 4, 2, 8, 1, 1, 0, 4, 1],
-        'Theft': [41, 31, 30, 39, 32, 40, 40, 27, 47, 59, 43, 38],
-        'Property Damage': [7, 8, 8, 12, 10, 10, 7, 9, 9, 21, 15, 10],
-        'Stealing of Vehicles': [2, 1, 3, 2, 3, 6, 2, 2, 4, 8, 4, 3],
-        'Robbery': [0, 0, 0, 0, 3, 0, 1, 0, 0, 2, 0, 0],
-        'Threatening Behaviour (Non-Family)': [1, 1, 1, 2, 0, 2, 0, 1, 2, 0, 2, 0],
-        'Assault (Non-Family)': [6, 6, 4, 2, 3, 3, 2, 5, 4, 2, 3, 7],
-        'Drug Offences': [2, 2, 19, 23, 2, 8, 4, 3, 3, 6, 15, 2]
-    },
     {   // 2023
-        'Burglary (Dwelling)': [13, 11, 8, 5, 10, 6, 7, 4, 8, 5, 4, 4],
-        'Burglary (Non-Dwelling)': [1, 4, 3, 2, 0, 1, 0, 0, 0, 1, 0, 0],
-        'Theft': [60, 42, 54, 60, 76, 36, 47, 50, 59, 51, 53, 58],
-        'Property Damage': [8, 17, 16, 10, 20, 1, 10, 13, 12, 12, 21, 14],
-        'Stealing of Vehicles': [4, 6, 5, 4, 6, 7, 7, 3, 8, 0, 4, 3],
-        'Robbery': [0, 1, 1, 1, 0, 0, 0, 1, 0, 3, 1, 0],
-        'Threatening Behaviour (Non-Family)': [0, 1, 1, 0, 0, 0, 0, 1, 0, 3, 2, 2],
-        'Assault (Non-Family)': [9, 2, 0, 1, 4, 6, 7, 6, 2, 6, 4, 6],
-        'Drug Offences': [15, 8, 10, 3, 3, 22, 18, 6, 10, 7, 6, 7]
+        'Burglary':                             [14, 15, 11, 7,  10, 7,  7,  4,  8,  6,  4,  4 ],
+        'Theft':                                [60, 42, 54, 60, 76, 36, 47, 50, 59, 51, 53, 59],
+        'Property Damage':                      [8,  17, 16, 10, 20, 1,  10, 13, 12, 12, 21, 14],
+        'Stealing of Vehicles':                 [4,  6,  5,  4,  6,  7,  7,  3,  8,  0,  4,  3 ],
+        'Robbery':                              [0,  1,  1,  1,  0,  0,  0,  1,  0,  3,  1,  1 ],
+        'Threatening Behaviour (Non-Family)':   [0,  1,  1,  0,  0,  0,  0,  1,  0,  3,  2,  2 ],
+        'Assault (Non-Family)':                 [9,  2,  0,  1,  4,  6,  7,  6,  2,  6,  4,  6 ],
+        'Drug Offences':                        [15, 8,  10, 3,  3,  22, 18, 6,  10, 7,  6,  7 ],
+        'Graffiti':                             [0,  1,  2,  0,  2,  0,  0,  0,  0,  0,  0,  0 ],
     },
     {   // 2024
-        'Burglary (Dwelling)': [6, 4, 6, 6, 2, 2],
-        'Burglary (Non-Dwelling)': [1, 1, 0, 1, 1, 1],
-        'Theft': [53, 52, 56, 38, 27, 39],
-        'Property Damage': [12, 10, 12, 8, 12, 11],
-        'Stealing of Vehicles': [4, 1, 6, 0, 1, 2],
-        'Robbery': [1, 1, 4, 0, 0, 2],
-        'Threatening Behaviour (Non-Family)': [0, 0, 4, 0, 2, 2],
-        'Assault (Non-Family)': [5, 6, 3, 0, 4, 4],
-        'Drug Offences': [1, 3, 8, 5, 3, 0]
+        'Burglary':                             [7,  5,  6,  7,  3,  3,  5,  13, 11, 4,  8,  11],
+        'Theft':                                [53, 52, 56, 38, 27, 39, 36, 40, 36, 35, 30, 30],
+        'Property Damage':                      [12, 10, 12, 8,  11, 11, 13, 3,  8,  11, 5,  7 ],
+        'Stealing of Vehicles':                 [4,  1,  6,  0,  1,  2,  0,  3,  2,  2,  1,  6 ],
+        'Robbery':                              [1,  1,  4,  0,  0,  2,  1,  0,  0,  2,  1,  0 ],
+        'Threatening Behaviour (Non-Family)':   [0,  0,  4,  0,  2,  3,  0,  3,  0,  3,  3,  1 ],
+        'Assault (Non-Family)':                 [5,  6,  3,  0,  4,  4,  5,  5,  3,  6,  2,  2 ],
+        'Drug Offences':                        [1,  3,  8,  5,  3,  0,  10, 10, 6,  7,  0,  9 ],
+        'Graffiti':                             [0,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  1 ]
+    },
+    {   // 2025
+        'Burglary':                             [16, 9,  5 ],
+        'Theft':                                [52, 44, 62],
+        'Property Damage':                      [7,  7,  12],
+        'Stealing of Vehicles':                 [2,  0,  1 ],
+        'Robbery':                              [1,  2,  1 ],
+        'Threatening Behaviour (Non-Family)':   [2,  1,  1 ],
+        'Assault (Non-Family)':                 [7,  5,  4 ],
+        'Drug Offences':                        [6,  8,  9 ],
+        'Graffiti':                             [0,  0,  0 ]
     }
 ]
 
 const globalMax =  {
-        'Burglary (Dwelling)': 30,
-        'Burglary (Non-Dwelling)': 10,
-        'Theft': 50,
+        'Burglary': 20,
+        'Theft': 80,
         'Property Damage': 10,
         'Stealing of Vehicles': 10,
         'Robbery': 10,
         'Threatening Behaviour (Non-Family)': 10,
         'Assault (Non-Family)': 15,
-        'Drug Offences': 15
+        'Drug Offences': 15,
+        'Graffiti': 5
 }
 
 window.charts = [];
